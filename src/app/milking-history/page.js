@@ -6,7 +6,7 @@ export default function History() {
   const [sessions, setSessions] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/sessions')
+    fetch('https://cow-milk-tracking-backend.onrender.com/sessions')
       .then((res) => res.json())
       .then((data) => setSessions(data));
   }, []);

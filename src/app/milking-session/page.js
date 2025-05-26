@@ -47,7 +47,7 @@ export default function Home() {
       milk_quantity
     };
 
-    await fetch('http://localhost:3001/sessions', {
+    await fetch('https://cow-milk-tracking-backend.onrender.com/sessions', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(session)
@@ -103,7 +103,7 @@ export default function Home() {
         )}
 
         <div style={{ marginTop: '2rem' }}>
-          <Link href="/milking-history" style={linkStyle}>📜 View History</Link>
+          <Link href="/milking-history" style={linkStyle}> View History</Link>
         </div>
       </div>
 
